@@ -1,0 +1,22 @@
+{
+    "portfolio": [
+        {
+            "cover": "/portfolio/1/Freudenberg.png",
+            "title": "Controlled Environment Friction Test",
+            "description": "Quality Assurance",
+            "url": "http://google.com"
+        },
+        {
+            "cover": "/portfolio/1/Gymshark.png",
+            "title": "Controller for Infusion Pump for Anesthesia",
+            "description": "MATLAB, Simulink",
+            "url": "http://google.com"
+        },
+        {
+            "cover": "/portfolio/1/Katz.png",
+            "title": "Electrocardiogram Circuit",
+            "description": "Simulink, Breadboards, Oscilloscope",
+            "url": "http://google.com"
+        }
+    ]
+}

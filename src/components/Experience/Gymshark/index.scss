@@ -1,0 +1,52 @@
+.experience-detail-page,
+.gymshark-page {
+    padding: 20px;
+
+    h1 {
+        font-size: 53px;
+        font-family: 'Coolvetica';
+        color: #64ffda;
+        font-weight: 400;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 40px;
+        left: -10px;
+
+        &:before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #64ffda;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -10px;
+            left: -10px;
+            opacity: 0.6;
+            line-height: 18px;
+        }
+
+        &:after {
+            content: '<h1/>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #64ffda;
+            font-size: 18px;
+            line-height: 18px;
+            position: absolute;
+            left: -30px;
+            bottom: -20px;
+            margin-left: 20px;
+            opacity: 0.6;
+        }
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+
+        li {
+            font-size: 14px;
+            color: #ccd6f6;
+            margin-bottom: 10px;
+        }
+    }
+}
+

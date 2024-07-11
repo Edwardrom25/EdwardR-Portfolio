@@ -1,0 +1,44 @@
+.skills-charts {
+  position: absolute;
+  width: 60%;
+  right: -10%;
+  left: auto;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 2;
+}
+
+#myCanvasContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#myCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 20%;
+  bottom: 0;
+  margin: auto;
+  width: auto;
+  height: 90%; /* Adjust the size of the canvas */
+}
+
+#myCanvasContainer li {
+  font-size: 20px; /* Adjust font size if necessary */
+  font-family: font-file-82132;
+  color: #ccd6f6; /* Set text color to white */
+}
+
+#myCanvasContainer li a {
+  color: #fff; /* Ensure link text is also white */
+  text-decoration: none; /* Remove underline from links */
+  outline: none; /* Remove outline */
+}
+
+#myCanvasContainer li a:hover {
+  outline: none; /* Ensure no outline on hover */
+}
