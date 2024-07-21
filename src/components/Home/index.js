@@ -22,6 +22,9 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
+      <div id="stars"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
@@ -60,5 +63,3 @@ const Home = () => {
 };
 
 export default Home;
-
-

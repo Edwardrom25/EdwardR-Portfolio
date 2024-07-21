@@ -102,6 +102,13 @@
       }
     }
 
+    a.linkedin-link {
+      &:after {
+        content: 'LINKEDIN';
+      }
+    }
+
+
     a.active {
       svg {
         color: #64ffda;
@@ -135,24 +142,32 @@
       }
     }
   }
+
+  .bottom-icon {
+    position: absolute;
+    bottom: -250px;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .hamburger-icon, .close-icon {
   display: none;
 }
 
-@media screen and (max-width: 1200px) {
-  .nav-bar { 
-    background: transparent;
+@media screen and (max-width: 960px) {
+  .nav-bar {
+    background: #181818;
     position: initial;
     height: auto;
     min-height: auto;
 
-     ul, nav {
-      display: none;
-     }
+    ul,
+    nav {
+      display: visible;
+    }
 
-     nav {
+    nav {
       width: 100%;
       top: 0;
       left: 0;
@@ -176,20 +191,20 @@
         opacity: 1;
         position: initial;
         width: auto;
-        margin-left: 10PX;
+        margin-left: 10px;
       }
 
       a svg {
         opacity: 1 !important;
       }
-     }
+    }
 
-     .hamburger-icon,
-     .close-icon {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        display: block;
-     }
+    .hamburger-icon,
+    .close-icon {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: block;
+    }
   }
 }

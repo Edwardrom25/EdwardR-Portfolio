@@ -3,19 +3,22 @@
         {
             "cover": "/portfolio/1/Freudenberg.png",
             "title": "Engineering Intern",
-            "description": "June 2024 — August 2024",
+            "date": "June 2024 — August 2024",
+            "location": "Aurora, IL",
             "url": "/experience/freudenberg"
         },
         {
             "cover": "/portfolio/1/Katz.png",
-            "title": "Software Project Lead",
-            "description": "January 2024 — May 2024",
+            "title": "Software Engineering Intern",
+            "date": "January 2024 — May 2024",
+            "location": "Champaign, IL",
             "url": "/experience/katz"
         },
         {
             "cover": "/portfolio/1/Gymshark.png",
             "title": "North America (NAM) Influencer",
-            "description": "June 2023 — Present",
+            "date": "June 2023 — Present",
+            "location": "Chicago, IL",
             "url": "/experience/gymshark"
         }
     ]

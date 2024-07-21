@@ -111,3 +111,70 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .container.portfolio-page {
+        padding-left: 0; /* Remove padding to prevent overflow */
+        padding-right: 0; /* Remove padding to prevent overflow */
+        .images-container {
+            margin-left: -50px;
+            padding-left: 0; /* Adjust padding to prevent overflow */
+            padding-right: 0; /* Adjust padding to prevent overflow */
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container.portfolio-page {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-x: hidden; /* Ensure no horizontal overflow */
+
+        .image-box {
+            position: relative;
+            height: 200px;
+            max-width: calc(50% - 10px);
+
+            .content {
+                position: absolute; /* Changed to relative to make content visible */
+                transition: none;
+                bottom: 0;
+                background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.2) 0,
+                rgba(0, 0, 0, 1)
+            );
+                padding: 10px; /* Adjust padding for mobile view */
+            }
+
+            .title {
+                display: block; /* Ensure title and description are visible */
+                font-size: 18px; /* Adjust font size for mobile view */
+            }
+
+            .description {
+                display: none
+            }
+
+            .btn {
+                margin-top: 10px; /* Adjust margin for mobile view */
+                margin-bottom: 5px; /* Adjust margin for mobile view */
+                padding: 0 10px; /* Adjust padding for mobile view */
+                height: 30px; /* Adjust height for mobile view */
+                line-height: 24px; /* Adjust line-height for mobile view */
+                font-size: 12px; /* Adjust font size for mobile view */
+            }
+        }
+
+        .images-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-bottom: 100px;
+            margin-left: -9px;
+            width: 90vh;
+            height: 90vh;
+        }
+    }
+}

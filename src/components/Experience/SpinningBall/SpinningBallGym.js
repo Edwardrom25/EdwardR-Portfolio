@@ -10,9 +10,10 @@ const SpinningBall = () => {
         if (window.TagCanvas) {
           try {
             window.TagCanvas.Start('myCanvas', 'tags', {
-              textColour: '#fff',
+              textColour: '#ccd6f6',
+              textFont: 'Helvetica Neue', // Specify the font family
               outlineColour: 'transparent',
-              reverse: true,
+              reverse: false,
               depth: 0.8,
               maxSpeed: 0.05,
               initial: [0.1, -0.1], // Ensures it spins on load
@@ -39,7 +40,10 @@ const SpinningBall = () => {
   return (
     <div className="skills-charts">
       <div id="myCanvasContainer">
-        <canvas width="450" height="450" id="myCanvas"></canvas>
+      <div id="stars"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
+        <canvas width="500" height="500" id="myCanvas"></canvas>
         <ul id="tags" style={{ display: 'none' }}>
           <li data-weight="25"><a href="#">Leadership</a></li>
           <li data-weight="25"><a href="#">Creativity</a></li>

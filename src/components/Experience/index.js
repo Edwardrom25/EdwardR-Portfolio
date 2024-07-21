@@ -16,7 +16,7 @@ const Experience = () => {
       
           // Cleanup function to clear the timeout
           return () => clearTimeout(timer);
-        }, []);
+    }, []);
 
     const renderWorkExperience = (workExperience) => {
         return (
@@ -31,7 +31,8 @@ const Experience = () => {
                                     alt="work experience" />
                                 <div className="content">
                                     <p className="title">{work.title}</p>
-                                    <h4 className="description">{work.description}</h4>
+                                    <h4 className="date">{work.date}</h4>
+                                    <h4 className="location">{work.location}</h4>
                                     <button
                                         className="btn"
                                         onClick={() => navigate(work.url)}
@@ -63,4 +64,3 @@ const Experience = () => {
 }
 
 export default Experience;
-

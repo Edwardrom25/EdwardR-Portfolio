@@ -23,7 +23,7 @@ const Katz = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={'Katz Diagnostics, Inc.'.split('')}
+              strArray={'Katz Diagnostics, Inc'.split('')}
               idx={22}
             />
           </h1>

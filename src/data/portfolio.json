@@ -1,21 +1,21 @@
 {
     "portfolio": [
         {
-            "cover": "/portfolio/1/Freudenberg.png",
-            "title": "Controlled Environment Friction Test",
-            "description": "Quality Assurance",
+            "cover": "/portfolio/1/Friction.png",
+            "title": "Coefficient of Friction Analysis of Mop Materials",
+            "description": "Tools: Universal Robots UR5 Cobot, MS Excel, MS PowerPoint, LaTeX",
             "url": "http://google.com"
         },
         {
-            "cover": "/portfolio/1/Gymshark.png",
-            "title": "Controller for Infusion Pump for Anesthesia",
-            "description": "MATLAB, Simulink",
+            "cover": "/portfolio/1/PID Model.png",
+            "title": "PID Controller for Infusion Pump for Anesthesia",
+            "description": "Tools: MATLAB, Simulink, LaTeX",
             "url": "http://google.com"
         },
         {
-            "cover": "/portfolio/1/Katz.png",
+            "cover": "/portfolio/1/ECG.png",
             "title": "Electrocardiogram Circuit",
-            "description": "Simulink, Breadboards, Oscilloscope",
+            "description": "Tools: Simulink, Autodesk Tinkercad, Breadboard, Electronics Lab Equipment (Oscilloscope, Function Generator, etc.), MS PowerPoint, LaTeX",
             "url": "http://google.com"
         }
     ]

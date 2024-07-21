@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
@@ -100,7 +100,6 @@ const Contact = () => {
           <MapContainer center={[41.951880, -87.713070]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[41.951880, -87.713070]}>
-              <Popup>Edward lives here. Come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>
         </div>

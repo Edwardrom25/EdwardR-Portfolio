@@ -1,5 +1,5 @@
 import './index.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logopreload from '../../assets/images/logopreload.png'; // New Image Import
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -11,90 +11,141 @@ import {
   faEnvelope,
   faBriefcase,
   faBars,
-  faClose,
   faFolder,
 } from '@fortawesome/free-solid-svg-icons';
 import { Link, NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 960);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
-    <div className="nav-bar">
-      <Link
-        className="logo"
-        to="/"
-        onClick={() => setShowNav(false)}>
-        <img src={logopreload} alt="Logo" />
-      </Link>
-      <nav className={showNav ? 'mobile-show' : ''}>
-        <NavLink
-          exact="true"
-          activeclassname="active"
+    <div>
+      <div className="nav-bar">
+        <Link
+          className="logo"
           to="/"
           onClick={() => setShowNav(false)}>
-          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          activeclassname="active"
-          className="about-link"
-          to="/about"
-          onClick={() => setShowNav(false)}>
-          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          activeclassname="active"
-          className="work-link"
-          to="/experience"
-          onClick={() => setShowNav(false)}
-        >
-          <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          activeclassname="active"
-          className="portfolio-link"
-          to="/portfolio"
-          onClick={() => setShowNav(false)}
-        >
-          <FontAwesomeIcon icon={faFolder} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          activeclassname="active"
-          className="contact-link"
-          to="/contact"
-          onClick={() => setShowNav(false)}
-        >
-          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-        </NavLink>
-        <FontAwesomeIcon
-          onClick={() => setShowNav(false)}
-          icon={faClose}
-          color="#4d4d4e"
-          size="3x"
-          className='close-icon' />
-      </nav>
-      <ul>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/edwardromero25"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-        {/* Removed GitHub, YouTube, and Skype li elements */}
-      </ul>
-      <FontAwesomeIcon
-          onClick={() => setShowNav(true)}
-          icon={faBars}
-          color="#4d4d4e"
-          size="3x"
-          className='hamburger-icon' />
+          <img src={logopreload} alt="Logo" />
+        </Link>
+        {isMobile ? (
+          <FontAwesomeIcon
+            onClick={() => setShowNav(!showNav)}
+            icon={faBars}
+            color="#64ffda"
+            size="3x"
+            className='hamburger-icon' />
+        ) : (
+          <nav>
+            <NavLink
+              exact="true"
+              activeclassname="active"
+              to="/"
+              onClick={() => setShowNav(false)}>
+              <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+            </NavLink>
+            <NavLink
+              activeclassname="active"
+              className="about-link"
+              to="/about"
+              onClick={() => setShowNav(false)}>
+              <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+            </NavLink>
+            <NavLink
+              activeclassname="active"
+              className="work-link"
+              to="/experience"
+              onClick={() => setShowNav(false)}
+            >
+              <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
+            </NavLink>
+            <NavLink
+              activeclassname="active"
+              className="portfolio-link"
+              to="/portfolio"
+              onClick={() => setShowNav(false)}
+            >
+              <FontAwesomeIcon icon={faFolder} color="#4d4d4e" />
+            </NavLink>
+            <NavLink
+              activeclassname="active"
+              className="contact-link"
+              to="/contact"
+              onClick={() => setShowNav(false)}
+            >
+              <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+            </NavLink>
+            <div className="bottom-icon">
+              <a
+                href="https://www.linkedin.com/in/edwardromero25"
+                target="_blank"
+                rel="noreferrer"
+                className="linkedin-link"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  color="#4d4d4e"
+                  className="anchor-icon"
+                />
+              </a>
+            </div>
+          </nav>
+        )}
+      </div>
+      {isMobile && (
+        <div className={`sliding-nav-bar ${showNav ? 'show' : ''}`}>
+          <nav>
+            <NavLink
+              exact="true"
+              activeclassname="active"
+              to="/"
+              onClick={() => setShowNav(false)}>
+              <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+            </NavLink>
+            <NavLink
+              activeclassname="active"
+              className="about-link"
+              to="/about"
+              onClick={() => setShowNav(false)}>
+              <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+            </NavLink>
+            <NavLink
+              activeclassname="active"
+              className="work-link"
+              to="/experience"
+              onClick={() => setShowNav(false)}
+            >
+              <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
+            </NavLink>
+            <NavLink
+              activeclassname="active"
+              className="portfolio-link"
+              to="/portfolio"
+              onClick={() => setShowNav(false)}
+            >
+              <FontAwesomeIcon icon={faFolder} color="#4d4d4e" />
+            </NavLink>
+            <NavLink
+              activeclassname="active"
+              className="contact-link"
+              to="/contact"
+              onClick={() => setShowNav(false)}
+            >
+              <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+            </NavLink>
+          </nav>
+        </div>
+      )}
     </div>
   );
 }
