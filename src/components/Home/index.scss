@@ -100,11 +100,11 @@
 
 @media screen and (max-width: 960px) {
   .home-page .donut {
-    top: 94%; /* Adjusted to position the donut lower */
+    top: 92%; /* Adjusted to position the donut lower */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -80%); /* Translate to center */
-    width: 95vw; /* Adjusted for smaller screens */
-    height: 95vw; /* Adjusted for smaller screens */
+    width: 85vw; /* Adjusted for smaller screens */
+    height: 85vw; /* Adjusted for smaller screens */
   }
 
   .home-page .donut canvas {
