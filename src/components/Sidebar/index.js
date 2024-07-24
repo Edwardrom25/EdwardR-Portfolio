@@ -50,39 +50,31 @@ const Sidebar = () => {
             <NavLink
               exact="true"
               activeclassname="active"
-              to="/"
-              onClick={() => setShowNav(false)}>
+              to="/">
               <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
             </NavLink>
             <NavLink
               activeclassname="active"
               className="about-link"
-              to="/about"
-              onClick={() => setShowNav(false)}>
+              to="/about">
               <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
             <NavLink
               activeclassname="active"
               className="work-link"
-              to="/experience"
-              onClick={() => setShowNav(false)}
-            >
+              to="/experience">
               <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
             </NavLink>
             <NavLink
               activeclassname="active"
               className="portfolio-link"
-              to="/portfolio"
-              onClick={() => setShowNav(false)}
-            >
+              to="/portfolio">
               <FontAwesomeIcon icon={faFolder} color="#4d4d4e" />
             </NavLink>
             <NavLink
               activeclassname="active"
               className="contact-link"
-              to="/contact"
-              onClick={() => setShowNav(false)}
-            >
+              to="/contact">
               <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
             <div className="bottom-icon">
@@ -108,39 +100,31 @@ const Sidebar = () => {
             <NavLink
               exact="true"
               activeclassname="active"
-              to="/"
-              onClick={() => setShowNav(false)}>
+              to="/">
               <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
             </NavLink>
             <NavLink
               activeclassname="active"
               className="about-link"
-              to="/about"
-              onClick={() => setShowNav(false)}>
+              to="/about">
               <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
             <NavLink
               activeclassname="active"
               className="work-link"
-              to="/experience"
-              onClick={() => setShowNav(false)}
-            >
+              to="/experience">
               <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
             </NavLink>
             <NavLink
               activeclassname="active"
               className="portfolio-link"
-              to="/portfolio"
-              onClick={() => setShowNav(false)}
-            >
+              to="/portfolio">
               <FontAwesomeIcon icon={faFolder} color="#4d4d4e" />
             </NavLink>
             <NavLink
               activeclassname="active"
               className="contact-link"
-              to="/contact"
-              onClick={() => setShowNav(false)}
-            >
+              to="/contact">
               <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
           </nav>

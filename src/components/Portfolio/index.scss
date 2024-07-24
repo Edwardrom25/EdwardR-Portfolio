@@ -116,6 +116,7 @@
     .container.portfolio-page {
         padding-left: 0; /* Remove padding to prevent overflow */
         padding-right: 0; /* Remove padding to prevent overflow */
+        box-sizing: border-box !important;
         .images-container {
             margin-left: -50px;
             padding-left: 0; /* Adjust padding to prevent overflow */
@@ -128,7 +129,7 @@
     .container.portfolio-page {
         width: 100%;
         padding: 20px;
-        box-sizing: border-box;
+        box-sizing: border-box !important;
         overflow-x: hidden; /* Ensure no horizontal overflow */
 
         .image-box {

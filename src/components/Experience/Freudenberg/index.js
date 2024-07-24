@@ -23,8 +23,8 @@ const Freudenberg = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={'FHP'.split('')}
-              idx={15}
+              strArray={'Freudenberg\nHousehold\nProducts'.split('')}
+              idx={-1}
             />
           </h1>
           <ul>

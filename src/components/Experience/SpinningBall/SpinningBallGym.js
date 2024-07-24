@@ -11,7 +11,8 @@ const SpinningBall = () => {
           try {
             window.TagCanvas.Start('myCanvas', 'tags', {
               textColour: '#ccd6f6',
-              textFont: 'Helvetica Neue', // Specify the font family
+              textFont: 'Coolvetica', // Specify the font family
+              textHeight: 20, // Specify the font size in pixels
               outlineColour: 'transparent',
               reverse: false,
               depth: 0.8,
@@ -43,7 +44,7 @@ const SpinningBall = () => {
       <div id="stars"></div>
           <div id="stars2"></div>
           <div id="stars3"></div>
-        <canvas width="500" height="500" id="myCanvas"></canvas>
+        <canvas width="600" height="600" id="myCanvas"></canvas>
         <ul id="tags" style={{ display: 'none' }}>
           <li data-weight="25"><a href="#">Leadership</a></li>
           <li data-weight="25"><a href="#">Creativity</a></li>

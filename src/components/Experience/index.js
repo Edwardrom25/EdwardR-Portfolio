@@ -52,7 +52,7 @@ const Experience = () => {
                 <h1 className="page-title">
                     <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={"Work Experience".split("")}
+                        strArray={"Work experience".split("")}
                         idx={15}
                     />
                 </h1>
