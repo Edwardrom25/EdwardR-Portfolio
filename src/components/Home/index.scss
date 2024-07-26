@@ -98,24 +98,26 @@
   }
 }
 
+
 @media screen and (max-width: 960px) {
-  .home-page .donut {
-    top: 92%; /* Adjusted to position the donut lower */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -80%); /* Translate to center */
-    width: 85vw; /* Adjusted for smaller screens */
-    height: 85vw; /* Adjusted for smaller screens */
-  }
-
-  .home-page .donut canvas {
-    width: 100%; /* Make the canvas fill the container */
-    height: 100%; /* Make the canvas fill the container */
-  }
-
-  .container {
-    height: auto; /* Allow the container to grow in height */
-    min-height: 150vh; /* Ensure the container takes more than full height of the viewport */
+  .home-page {
+    position: relative;
+    height: auto;
+    min-height: 150vh; /* Ensure the container takes more than the full height of the viewport */
     overflow: visible; /* Ensure the container does not hide overflow content */
+
+    .donut {
+      top: calc(100% - 50vh - 10vw / 2); /* Adjust top position for spacing */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Translate to center */
+      width: 85vw; /* Adjust for smaller screens */
+      height: 85vw; /* Adjust for smaller screens */
+    }
+
+    .donut canvas {
+      width: 100%; /* Make the canvas fill the container */
+      height: 100%; /* Make the canvas fill the container */
+    }
   }
 }
 

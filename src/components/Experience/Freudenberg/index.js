@@ -23,16 +23,17 @@ const Freudenberg = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={'Freudenberg\nHousehold\nProducts'.split('')}
+              strArray={'Freudenberg Group'.split('')}
               idx={-1}
             />
           </h1>
           <ul>
             <li>Supported 4 engineers and 1 marketing & innovation specialist with the development and quality control of new and existing cleaning products for controlled environments in pharmaceutical and microelectronics manufacturing</li>
-            <li>Aided the sales team in numerically comparing the ergonomics of Vileda Professional CE mops to competitor mops on cleanroom flooring by designing and validating a test method to compare the friction coefficients of mop heads</li>
-            <li>Created 2D drawings in SolidWorks for 6 parts of a new product pending Stage-Gate 4 approval, incorporating dimensions and tolerances for precise manufacturing</li>
-            <li>Compiled performance testing data for the absorbency, chemical compatibility, autoclavability, particle shedding, and gamma irradiation resistivity of 3 products into PowerPoint reports, expediting the audit process for clients</li>
-            <li>Ensured compliance with ISO and GMP standards by creating product specifications, bills of materials, and packaging process specifications according to the inspection methods and type of protection required for 6 products</li>
+            <li>Developed and validated a test method to compute the coefficient of friction of mops, enabling the sales team to quantify and compare the friction experienced by users with Vileda Professional mops versus competitor mops</li>
+            <li>Created 2D SolidWorks drawings for six parts of a flagship product launching in 2025, ensuring precise dimensions and tolerances in connection areas to minimize assembly issues for end users</li>
+            <li>Created bills of materials, packaging specifications, and pallet patterns for 6 new products, optimizing for sustainability, cost, protection, and sales appeal</li>
+            <li>Expedited clients' cleanroom compliance documentation by compiling internal and third party testing data on the chemical compatibility, autoclavibility, and particle release of 3 prototypes into PowerPoint reports</li>
+            <li>Researched and compiled active patents for popular cleaning products in the healthcare industry, simplifying materials engineering details for Vileda Professional's legal team to ensure the prototype in development avoids IP infringement</li>
           </ul>
         </div>
         <SpinningBall /> {/* Add the SpinningBall component here */}
@@ -43,4 +44,3 @@ const Freudenberg = () => {
 }
 
 export default Freudenberg;
-
