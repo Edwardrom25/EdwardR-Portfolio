@@ -107,7 +107,7 @@
     overflow: visible; /* Ensure the container does not hide overflow content */
 
     .donut {
-      top: calc(100% - 50vh - 10vw / 2); /* Adjust top position for spacing */
+      top: calc(100% - 40vh - 1vh / 2); /* Adjust top position for spacing */
       left: 50%; /* Center horizontally */
       transform: translateX(-50%); /* Translate to center */
       width: 85vw; /* Adjust for smaller screens */

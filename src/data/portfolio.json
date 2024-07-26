@@ -4,19 +4,19 @@
             "cover": "/portfolio/1/Friction.png",
             "title": "Coefficient of Friction Test for Mops",
             "description": "Tools: Universal Robots UR5 Cobot, MS Excel, MS PowerPoint, LaTeX",
-            "url": "http://google.com"
+            "url": "/portfolio/1/Coefficient of Friction Test.pdf"
         },
         {
             "cover": "/portfolio/1/PID Model.png",
             "title": "PID Controller for Infusion Pump for Anesthesia",
             "description": "Tools: MATLAB, Simulink, LaTeX",
-            "url": "http://google.com"
+            "url": "/portfolio/1/PID Controller.pdf"
         },
         {
             "cover": "/portfolio/1/ECG.png",
             "title": "Electrocardiogram Circuit",
             "description": "Tools: Simulink, Autodesk Tinkercad, Breadboard, Electronics Lab Equipment (Oscilloscope, Function Generator, etc.), MS PowerPoint, LaTeX",
-            "url": "http://google.com"
+            "url": "/portfolio/1/ECG.pdf"
         }
     ]
 }
