@@ -23,7 +23,7 @@ const Freudenberg = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={'Freudenberg Group'.split('')}
+              strArray={'FHCS'.split('')}
               idx={12}
             />
           </h1>

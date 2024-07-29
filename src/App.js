@@ -22,7 +22,7 @@ function App() {
           <Route path="projects" element={<Portfolio />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="work-experience" element={<Experience />} />
-          <Route path="work-experience/freudenberg-group" element={<Freudenberg />} />
+          <Route path="work-experience/fhcs" element={<Freudenberg />} />
           <Route path="work-experience/katz-diagnostics" element={<Katz />} />
           <Route path="work-experience/gymshark" element={<Gymshark />} />
         </Route>
