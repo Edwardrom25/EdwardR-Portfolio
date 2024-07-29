@@ -17,14 +17,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="about-me" element={<About />} />
+          <Route path="contact-me" element={<Contact />} />
+          <Route path="projects" element={<Portfolio />} />
           <Route path="dashboard" element={<Dashboard />} />
-          <Route path="experience" element={<Experience />} />
-          <Route path="experience/freudenberg" element={<Freudenberg />} />
-          <Route path="experience/katz" element={<Katz />} />
-          <Route path="experience/gymshark" element={<Gymshark />} />
+          <Route path="work-experience" element={<Experience />} />
+          <Route path="work-experience/freudenberg-group" element={<Freudenberg />} />
+          <Route path="work-experience/katz-diagnostics" element={<Katz />} />
+          <Route path="work-experience/gymshark" element={<Gymshark />} />
         </Route>
       </Routes>
     </>

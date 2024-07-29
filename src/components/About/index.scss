@@ -58,11 +58,10 @@
 	width: 50%;
     height: 100%;
     top: 0;
-    padding-top: 18%;
 	margin-left: 0;
 	position: absolute;
 	right: 0;
-	overflow: hidden;
+	overflow: visible;
   }
   
   .cubespinner {
@@ -83,7 +82,9 @@
 	-ms-transform-origin: 100px 100px 0;
 	transform-origin: 100px 100px 0;
 	margin-left: calc(50% - 100px);
-  }
+	margin-top: 250px;
+}
+
   
   .cubespinner div {
 	position: absolute;

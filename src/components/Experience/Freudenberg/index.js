@@ -24,7 +24,7 @@ const Freudenberg = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={'Freudenberg Group'.split('')}
-              idx={-1}
+              idx={12}
             />
           </h1>
           <ul>

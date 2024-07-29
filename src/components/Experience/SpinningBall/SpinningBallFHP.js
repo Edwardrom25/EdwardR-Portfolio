@@ -50,7 +50,7 @@ const SpinningBall = () => {
           <li data-weight="25"><a href="#">Quality Assurance</a></li>
           <li data-weight="25"><a href="#">R&D</a></li>
           <li data-weight="25"><a href="#">Controlled Environments</a></li>
-          <li data-weight="25"><a href="#">Clean Rooms</a></li>
+          <li data-weight="25"><a href="#">Cleanrooms</a></li>
           <li data-weight="25"><a href="#">3D Modeling</a></li>
           <li data-weight="25"><a href="#">Project Management</a></li>
           <li data-weight="25"><a href="#">Product Testing</a></li>

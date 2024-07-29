@@ -56,25 +56,25 @@ const Sidebar = () => {
             <NavLink
               activeclassname="active"
               className="about-link"
-              to="/about">
+              to="/about-me">
               <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
             <NavLink
               activeclassname="active"
               className="work-link"
-              to="/experience">
+              to="/work-experience">
               <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
             </NavLink>
             <NavLink
               activeclassname="active"
               className="portfolio-link"
-              to="/portfolio">
+              to="/projects">
               <FontAwesomeIcon icon={faFolder} color="#4d4d4e" />
             </NavLink>
             <NavLink
               activeclassname="active"
               className="contact-link"
-              to="/contact">
+              to="/contact-me">
               <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
             <div className="bottom-icon">
@@ -106,25 +106,25 @@ const Sidebar = () => {
             <NavLink
               activeclassname="active"
               className="about-link"
-              to="/about">
+              to="/about-me">
               <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
             <NavLink
               activeclassname="active"
               className="work-link"
-              to="/experience">
+              to="/work-experience">
               <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
             </NavLink>
             <NavLink
               activeclassname="active"
               className="portfolio-link"
-              to="/portfolio">
+              to="/projects">
               <FontAwesomeIcon icon={faFolder} color="#4d4d4e" />
             </NavLink>
             <NavLink
               activeclassname="active"
               className="contact-link"
-              to="/contact">
+              to="/contact-me">
               <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
           </nav>
