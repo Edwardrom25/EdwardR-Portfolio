@@ -138,6 +138,18 @@
             box-sizing: border-box; /* Ensure proper box sizing */
         }
 
+        .content {
+            position: absolute; /* Ensure content is positioned relative to image box */
+            transition: none;
+            bottom: 0;
+            background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.2) 0,
+                rgba(0, 0, 0, 1)
+            );
+            padding: 10px; /* Add padding for better visibility */
+        }
+
         .title {
             display: block; /* Ensure title is visible */
             font-size: 18px; /* Adjust font size for mobile view */
@@ -145,6 +157,15 @@
 
         .description {
             display: none;
+        }
+
+        .btn {
+            margin-top: 12px; /* Adjust margin for mobile view */
+            margin-bottom: 7px; /* Adjust margin for mobile view */
+            padding: 0 23px; /* Adjust padding to make button wider */
+            height: 36px; /* Adjust height for mobile view */
+            line-height: 30px; /* Adjust line-height for mobile view */
+            font-size: 14px; /* Adjust font size for mobile view */
         }
     }
 }
