@@ -519,14 +519,14 @@
         display: flex; /* Use flexbox for centering */
         justify-content: center; /* Center horizontally */
         align-items: center; /* Center vertically */
-        width: 41vh; /* Adjust width as needed */
-        height: 41vh; /* Adjust height as needed */
+        width: 100%; /* Adjust width as needed */
+        height: 45vh; /* Adjust height as needed */
         overflow: hidden;
     }
     
     .cubespinner {
         position: relative !important;
-        margin-top: 175px; /* Ensure there's no unwanted margin */
+        margin-top: 200px; /* Ensure there's no unwanted margin */
         width: 100%; /* Ensure the spinner takes the full width of the container */
         height: 100%; /* Ensure the spinner takes the full height of the container */
     }
