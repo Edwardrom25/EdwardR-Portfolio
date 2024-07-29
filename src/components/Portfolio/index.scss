@@ -46,7 +46,6 @@
                 rgba(0, 0, 0, 1)
             );
             bottom: -70px;
-            visibility: hidden; /* Hide the content initially */
         }
 
         .title {
@@ -80,7 +79,11 @@
             font-weight: 700;
             transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
             cursor: pointer;
-            visibility: hidden; /* Hide the button initially */
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #64ffda;
         }
 
         &:after {
@@ -105,11 +108,6 @@
         &:hover .content {
             bottom: 0;
             background: transparent;
-            visibility: visible; /* Show the content on hover */
-        }
-
-        &:hover .btn {
-            visibility: visible; /* Show the button on hover */
         }
     }
 }
