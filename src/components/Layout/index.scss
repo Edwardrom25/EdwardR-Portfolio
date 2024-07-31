@@ -219,6 +219,20 @@
     }
 }
 
+.katz-page .text-zone h1 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.katz-page .text-zone h1 .katz,
+.katz-page .text-zone h1 .diagnostics {
+  white-space: nowrap;
+}
+
+.katz-page .text-zone h1 .katz {
+  margin-right: 1.25rem; // Add space between Katz and Diagnostics
+}
+
 @media only screen and (max-width: 680px) {
     .alertify,
     .alertify-logs {
@@ -300,6 +314,17 @@
     .container.about-page .text-zone {
         width: 40%;
     }
+
+    .katz-page .text-zone h1 {
+        display: block;
+      }
+      .katz-page .text-zone h1 .katz,
+      .katz-page .text-zone h1 .diagnostics {
+        display: block;
+        white-space: normal;
+      }
+    
+    
 
     .container.about-page .text-zone h1:after,
     .container.contact-page .text-zone h1:after,

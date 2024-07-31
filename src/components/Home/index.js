@@ -48,7 +48,7 @@ const Home = () => {
             />
           </h1>
           <h2>Manufacturing / Electrical Systems / Materials & Processes</h2>
-          <Link to="/contact" className="flat-button">
+          <Link to="/contact-me" className="flat-button">
             CONTACT ME
           </Link>
         </div>
