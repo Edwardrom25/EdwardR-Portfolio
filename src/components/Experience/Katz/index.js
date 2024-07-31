@@ -21,7 +21,20 @@ const Katz = () => {
       <div className="container katz-page">
         <div className="text-zone">
           <h1>
-            <span className="katz">Katz</span> <span className="diagnostics">Diagnostics</span>
+            <span className="katz">
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={'Katz'.split('')}
+                idx={9}
+              />
+            </span>
+            <span className="diagnostics">
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={'Diagnostics'.split('')}
+                idx={13}
+              />
+            </span>
           </h1>
           <ul>
             <li>Collaborated with 2 engineers and 4 students to provide the first noninvasive method for diagnosing fibromyalgia by developing a near-infrared spectroscopy prototype that measures muscle oxygenation in a patient's hand</li>
@@ -38,5 +51,6 @@ const Katz = () => {
 }
 
 export default Katz;
+
 
 
