@@ -597,29 +597,10 @@
       .nav-bar nav a:first-child {
         margin-left: 0
       }
-      .nav-bar ul {
-        position: static;
-        bottom: 20px !important;
-        width: auto;
-        height: 60px;
-        line-height: 60px;
-        display: block;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        margin: 0;
-        float: right
-      }
-      .nav-bar ul li {
-        float: right;
-        height: 60px;
-        line-height: 60px;
-        margin: 0 10px
-      }
-      .nav-bar ul li a {
-        line-height: 60px;
-        padding: 0
-      }
+      
+      .nav-bar ul, nav {
+        display: none;
+       }
 
       /* Top Navbar */
 .nav-bar {
