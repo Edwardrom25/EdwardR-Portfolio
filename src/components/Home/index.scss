@@ -82,7 +82,6 @@
 
   .donut {
     position: absolute;
-    right: 15%;
     top: 50%;
     transform: translateY(-50%);
     width: 500px; /* Increase the container size */
@@ -90,6 +89,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: calc(50% + 100px);
   }
 
   .donut canvas {
@@ -112,6 +112,7 @@
       transform: translateX(-50%); /* Translate to center */
       width: 65vw; /* Adjust for smaller screens */
       height: 65vw; /* Adjust for smaller screens */
+      margin-left: 0;
     }
 
     .donut canvas {

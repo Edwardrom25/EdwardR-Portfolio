@@ -102,12 +102,6 @@
       }
     }
 
-    a.linkedin-link {
-      &:after {
-        content: 'LINKEDIN';
-      }
-    }
-
 
     a.active {
       svg {
@@ -142,15 +136,8 @@
       }
     }
   }
-
-  .bottom-icon {
-    position: absolute;
-    bottom: -250px;
-    width: 100%;
-    text-align: center;
-  }
 }
-
+  
 .hamburger-icon, .close-icon {
   display: none;
 }
@@ -164,7 +151,7 @@
 
     ul,
     nav {
-      display: visible;
+      display: none;
     }
 
     nav {

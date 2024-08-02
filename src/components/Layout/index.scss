@@ -620,6 +620,144 @@
         line-height: 60px;
         padding: 0
       }
+
+      /* Top Navbar */
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 60px; /* Height of the top navbar */
+}
+
+.nav-bar .logo {
+  display: flex;
+  align-items: center;
+  margin-left: -15px; /* Adjust logo positioning */
+}
+
+.nav-bar .hamburger-icon {
+  cursor: pointer;
+  z-index: 1100;
+  font-size: 3.3rem; /* Increased size of the hamburger icon */
+  margin-right: 40px; /* Adjust hamburger icon positioning */
+}
+
+/* Sliding Navbar */
+.sliding-nav-bar {
+  position: fixed;
+  top: 59px; /* Positioned directly below the top navbar */
+  left: 100%; /* Hidden by default */
+  width: 100%;
+  height: 60px; /* Height of the sliding navbar */
+  background: #181818;
+  transition: all 0.3s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.sliding-nav-bar.show {
+  left: 0; /* Slide in when .show class is added */
+}
+
+.sliding-nav-bar nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+.sliding-nav-bar nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 0;
+  flex: 1;
+  text-align: center;
+  font-size: 2.4rem; /* Increased size of the icons */
+}
+
+.sliding-nav-bar nav a.active {
+  svg {
+  color: #64ffde; /* Highlight the active link */
+}
+}
+
+
+.sliding-nav-bar a {
+  font-size: 22px;
+color: #4d4d4e;
+display: block;
+line-height: 51px;
+height: 51px;
+position: relative;  /* This ensures the pseudo-element is positioned relative to the anchor element */
+text-decoration: none;
+
+  &:after {
+  content: '';
+      font-size: 9px;
+      letter-spacing: 2px;
+      position: absolute;
+      bottom: 15px;
+      display: block;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+      color: #64ffda;
+}
+}
+
+
+.sliding-nav-bar nav a.active::after {
+opacity: 1;
+}
+
+
+.sliding-nav-bar nav a.active svg {
+  opacity: 0 !important; /* Make the icon disappear */
+}
+
+ .sliding-nav-bar a {
+  &:first-child {
+    &:after {
+      content: 'HOME';
+    }
+  }
+}
+
+a.about-link {
+  &:after {
+    content: 'ABOUT';
+  }
+}
+
+a.contact-link {
+  &:after {
+    content: 'CONTACT';
+  }
+}
+
+a.portfolio-link {
+  &:after {
+    content: 'PROJECTS';
+  }
+}
+
+a.work-link {
+  &:after {
+    content: 'WORK';
+  }
+}
+
+
 }
 
 @media (max-width: 750px) {
@@ -700,144 +838,6 @@
         position: relative;
         top: -10px;
     }
-
-/* Top Navbar */
-.nav-bar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    background: #181818;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    height: 60px; /* Height of the top navbar */
-  }
-  
-  .nav-bar .logo {
-    display: flex;
-    align-items: center;
-    margin-left: -15px; /* Adjust logo positioning */
-  }
-  
-  .nav-bar .hamburger-icon {
-    cursor: pointer;
-    z-index: 1100;
-    font-size: 3.3rem; /* Increased size of the hamburger icon */
-    margin-right: 40px; /* Adjust hamburger icon positioning */
-  }
-  
-  /* Sliding Navbar */
-  .sliding-nav-bar {
-    position: fixed;
-    top: 59px; /* Positioned directly below the top navbar */
-    left: 100%; /* Hidden by default */
-    width: 100%;
-    height: 60px; /* Height of the sliding navbar */
-    background: #181818;
-    transition: all 0.3s ease-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-  }
-  
-  .sliding-nav-bar.show {
-    left: 0; /* Slide in when .show class is added */
-  }
-  
-  .sliding-nav-bar nav {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-
-  
-  .sliding-nav-bar nav a {
-    color: white;
-    text-decoration: none;
-    padding: 15px 0;
-    flex: 1;
-    text-align: center;
-    font-size: 2.4rem; /* Increased size of the icons */
-  }
-  
-  .sliding-nav-bar nav a.active {
-    svg {
-    color: #64ffde; /* Highlight the active link */
-  }
-}
-
-  
-  .sliding-nav-bar a {
-    font-size: 22px;
-  color: #4d4d4e;
-  display: block;
-  line-height: 51px;
-  height: 51px;
-  position: relative;  /* This ensures the pseudo-element is positioned relative to the anchor element */
-  text-decoration: none;
-  
-    &:after {
-    content: '';
-        font-size: 9px;
-        letter-spacing: 2px;
-        position: absolute;
-        bottom: 15px;
-        display: block;
-        width: 100%;
-        text-align: center;
-        opacity: 0;
-        -webkit-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-        color: #64ffda;
-  }
-}
-
-
-.sliding-nav-bar nav a.active::after {
-  opacity: 1;
-}
-
-
-.sliding-nav-bar nav a.active svg {
-    opacity: 0 !important; /* Make the icon disappear */
-  }
-
-   .sliding-nav-bar a {
-    &:first-child {
-      &:after {
-        content: 'HOME';
-      }
-    }
-  }
-
-  a.about-link {
-    &:after {
-      content: 'ABOUT';
-    }
-  }
-
-  a.contact-link {
-    &:after {
-      content: 'CONTACT';
-    }
-  }
-
-  a.portfolio-link {
-    &:after {
-      content: 'PROJECTS';
-    }
-  }
-
-  a.work-link {
-    &:after {
-      content: 'WORK';
-    }
-  }
-
-
 
       
 

@@ -12,6 +12,7 @@ import {
   faBriefcase,
   faBars,
   faFolder,
+  faClose,
 } from '@fortawesome/free-solid-svg-icons';
 import { Link, NavLink } from 'react-router-dom';
 
@@ -44,85 +45,95 @@ const Sidebar = () => {
             icon={faBars}
             color="#64ffda"
             size="3x"
-            className='hamburger-icon' />
+            className="hamburger-icon"
+          />
         ) : (
           <nav>
             <NavLink
               exact="true"
-              activeclassname="active"
-              to="/">
+              activeClassName="active"
+              to="/"
+              onClick={() => setShowNav(false)}>
               <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
             </NavLink>
             <NavLink
-              activeclassname="active"
+              activeClassName="active"
               className="about-link"
-              to="/about-me">
+              to="/about-me"
+              onClick={() => setShowNav(false)}>
               <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
             <NavLink
-              activeclassname="active"
+              activeClassName="active"
               className="work-link"
-              to="/work-experience">
+              to="/work-experience"
+              onClick={() => setShowNav(false)}
+            >
               <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
             </NavLink>
             <NavLink
-              activeclassname="active"
+              activeClassName="active"
               className="portfolio-link"
-              to="/projects">
+              to="/projects"
+              onClick={() => setShowNav(false)}
+            >
               <FontAwesomeIcon icon={faFolder} color="#4d4d4e" />
             </NavLink>
             <NavLink
-              activeclassname="active"
+              activeClassName="active"
               className="contact-link"
-              to="/contact-me">
+              to="/contact-me"
+              onClick={() => setShowNav(false)}
+            >
               <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
-            <div className="bottom-icon">
-              <a
-                href="https://www.linkedin.com/in/edwardromero25"
-                target="_blank"
-                rel="noreferrer"
-                className="linkedin-link"
-              >
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  color="#4d4d4e"
-                  className="anchor-icon"
-                />
-              </a>
-            </div>
           </nav>
         )}
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/edwardromero25"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                color="#4d4d4e"
+                className="anchor-icon"
+              />
+            </a>
+          </li>
+        </ul>
       </div>
       {isMobile && (
         <div className={`sliding-nav-bar ${showNav ? 'show' : ''}`}>
           <nav>
             <NavLink
               exact="true"
-              activeclassname="active"
+              activeClassName="active"
               to="/">
               <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
             </NavLink>
             <NavLink
-              activeclassname="active"
+              activeClassName="active"
               className="about-link"
               to="/about-me">
               <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
             <NavLink
-              activeclassname="active"
+              activeClassName="active"
               className="work-link"
               to="/work-experience">
               <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
             </NavLink>
             <NavLink
-              activeclassname="active"
+              activeClassName="active"
               className="portfolio-link"
               to="/projects">
               <FontAwesomeIcon icon={faFolder} color="#4d4d4e" />
             </NavLink>
             <NavLink
-              activeclassname="active"
+              activeClassName="active"
               className="contact-link"
               to="/contact-me">
               <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
