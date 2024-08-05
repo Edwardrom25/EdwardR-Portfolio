@@ -58,7 +58,7 @@ const SpinningBall = () => {
           <li data-weight="25"><a href="#">Community Building</a></li>
           <li data-weight="25"><a href="#">Personal Branding</a></li>
           <li data-weight="25"><a href="#">Video Production</a></li>
-          <li data-weight="25"><a href="#">Video Editing</a></li>
+          <li data-weight="25"><a href="#">Editing</a></li>
           <li data-weight="25"><a href="#">Social Media Analytics</a></li>
           <li data-weight="25"><a href="#">Brand Loyalty</a></li>
           <li data-weight="25"><a href="#">TikTok</a></li>

@@ -46,10 +46,10 @@ const SpinningBall = () => {
           <div id="stars3"></div>
         <canvas width="600" height="600" id="myCanvas"></canvas>
         <ul id="tags" style={{ display: 'none' }}>
-          <li data-weight="25"><a href="#">Manufacturing Processes</a></li>
+          <li data-weight="25"><a href="#">Manufacturing</a></li>
           <li data-weight="25"><a href="#">Quality Assurance</a></li>
           <li data-weight="25"><a href="#">R&D</a></li>
-          <li data-weight="25"><a href="#">Controlled Environments</a></li>
+          <li data-weight="25"><a href="#">GD&T</a></li>
           <li data-weight="25"><a href="#">Cleanrooms</a></li>
           <li data-weight="25"><a href="#">3D Modeling</a></li>
           <li data-weight="25"><a href="#">Project Management</a></li>
@@ -59,15 +59,15 @@ const SpinningBall = () => {
           <li data-weight="25"><a href="#">SolidWorks</a></li>
           <li data-weight="25"><a href="#">GMP</a></li>
           <li data-weight="25"><a href="#">ISO Standards</a></li>
-          <li data-weight="25"><a href="#">Packaging Specifications</a></li>
+          <li data-weight="25"><a href="#">Packaging Design</a></li>
           <li data-weight="25"><a href="#">MS Excel</a></li>
           <li data-weight="25"><a href="#">MS PowerPoint</a></li>
           <li data-weight="25"><a href="#">MS Word</a></li>
           <li data-weight="25"><a href="#">Bill of Materials</a></li>
-          <li data-weight="25"><a href="#">Product Specifications</a></li>
-          <li data-weight="25"><a href="#">Quality Control Plans</a></li>
+          <li data-weight="25"><a href="#">Stage-Gate</a></li>
+          <li data-weight="25"><a href="#">Problem Solving</a></li>
           <li data-weight="25"><a href="#">Regulatory Compliance</a></li>
-          <li data-weight="25"><a href="#">Cost Savings</a></li>
+          <li data-weight="25"><a href="#">Teamwork</a></li>
         </ul>
       </div>
     </div>

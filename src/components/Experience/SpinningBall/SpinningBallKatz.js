@@ -56,7 +56,7 @@ const SpinningBall = () => {
           <li data-weight="25"><a href="#">MS PowerPoint</a></li>
           <li data-weight="25"><a href="#">Embedded Systems</a></li>
           <li data-weight="25"><a href="#">AutoCAD</a></li>
-          <li data-weight="25"><a href="#">Technical Documentation</a></li>
+          <li data-weight="25"><a href="#">Documentation</a></li>
           <li data-weight="25"><a href="#">Troubleshooting</a></li>
           <li data-weight="25"><a href="#">FDA Regulations</a></li>
           <li data-weight="25"><a href="#">User Experience</a></li>
@@ -65,7 +65,7 @@ const SpinningBall = () => {
           <li data-weight="25"><a href="#">Data Analysis</a></li>
           <li data-weight="25"><a href="#">Team Coordination</a></li>
           <li data-weight="25"><a href="#">Public Speaking</a></li>
-          <li data-weight="25"><a href="#">Visual Aids Design</a></li>
+          <li data-weight="25"><a href="#">Circuit Design</a></li>
           <li data-weight="25"><a href="#">System Optimization</a></li>
           <li data-weight="25"><a href="#">Project Management</a></li>
         </ul>
