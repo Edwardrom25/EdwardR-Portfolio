@@ -55,13 +55,13 @@ const SpinningBall = () => {
           <li data-weight="25"><a href="#">MS Word</a></li>
           <li data-weight="25"><a href="#">MS PowerPoint</a></li>
           <li data-weight="25"><a href="#">Embedded Systems</a></li>
-          <li data-weight="25"><a href="#">AutoCAD</a></li>
+          <li data-weight="25"><a href="#">Signal Processing</a></li>
           <li data-weight="25"><a href="#">Documentation</a></li>
           <li data-weight="25"><a href="#">Troubleshooting</a></li>
           <li data-weight="25"><a href="#">FDA Regulations</a></li>
           <li data-weight="25"><a href="#">User Experience</a></li>
           <li data-weight="25"><a href="#">ISO Standards</a></li>
-          <li data-weight="25"><a href="#">Interviews</a></li>
+          <li data-weight="25"><a href="#">Optical Electronics</a></li>
           <li data-weight="25"><a href="#">Data Analysis</a></li>
           <li data-weight="25"><a href="#">Team Coordination</a></li>
           <li data-weight="25"><a href="#">Public Speaking</a></li>
